@@ -1,0 +1,280 @@
+* { margin: 0; padding: 0; }
+html { width: 100%; height: 100%; }
+
+::selection { background: #ffe4e1; }
+::-moz-selection { background: #ffe4e1; }
+
+body {
+  background: #ededed;
+  font-family: Verdana, Tamoha, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+  text-align: left;
+  position: relative;
+  min-height: 100%;
+}
+
+a:link, a:visited {
+  color: #dc143c;
+  text-decoration: none;
+}
+a[href]:hover { background: #ffe4e1; }
+
+ul.links { list-style: none; }
+
+h1 { font-size: 20px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }
+h4, h5 { font-size: 14px; }
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+  margin-top: 0.5em;
+}
+
+ul, ol { margin: 0.5em 0 0 1.3em; }
+
+p { margin: 1em 0; }
+
+pre {
+  padding: 0.3em;
+  margin: 0.5em 0;
+  background: #d1d1d1;
+  overflow: auto;
+}
+
+pre, code, kbd, samp, tt, .src {
+  font-family: 'Bitstream Vera Sans Mono', Monaco, monospace;
+}
+
+#package-header {
+  background: #303030;
+  color: #ededed;
+  padding: 0.5em 3.5em 0.5em 3.5em;
+}
+
+#package-header #page-menu {
+  float: right;
+  padding: 0 0.7em 0 0.9em;
+  margin: 0;
+  border-left: 1px solid #525252;
+  max-height: 4.2em;
+  overflow: hidden;
+  background: #303030;
+}
+
+#package-header #page-menu:hover { max-height: 10em; }
+
+#package-header .caption {
+  font-size: 19px;
+  font-weight: normal;
+  padding: 1em 0 1em 0;
+  margin: 0;
+}
+
+#package-header a:hover {
+  background: #6a180f;
+}
+
+#content {
+  padding: 2em 3.5em 8em 3.5em;
+}
+
+#module-list .package { float: right; }
+#module-list .caption { font-size: 17px; }
+#module-list ul {
+  list-style: none;
+  margin: 0 0 0 1.5em;
+}
+
+#module-header .caption {
+  font-size: 24px;
+  border-bottom: 1px solid #525252;
+}
+
+#table-of-contents {
+  float: right;
+  clear: right;
+  background: #e8e8e8;
+  padding: 0.5em 1em;
+  max-width: 20em;
+  margin-left: 1.5em;
+}
+
+#table-of-contents .caption { margin-top: 0; }
+
+#table-of-contents ul {
+  list-style: none;
+  margin: 0;
+}
+
+#table-of-contents ul ul {
+  margin-left: 1.5em;
+}
+
+#description .caption { display: none; }
+
+#interface p.src .link { float: right; }
+
+#synopsis { display: none; }
+
+#synopsis ul {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.no-frame #synopsis {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+#synopsis .caption {
+  font-size: 1px;
+  color: #303030;
+  width: 30px;
+  height: 30px;
+}
+
+#synopsis .show {
+  background: #e8e8e8;
+  height: 500px;
+  overflow: none;
+  padding: 1.5em;
+  border: 1px solid #303030;
+}
+
+#synopsis .show:hover { overflow: auto; }
+
+#synopsis p.caption.collapser {
+  background: url(synopsis.png) no-repeat -55px -17px;
+  margin: 0 0 -6em 555em;
+}
+
+#synopsis p.caption.expander {
+  background: url(synopsis.png) no-repeat -5px -17px;
+}
+
+#interface table {
+  background: #e8e8e8;
+  margin-top: -0.5em;
+  padding: 0.5em;
+}
+
+#interface td.doc p {
+  margin: 0;
+  padding: 0 0 0.5em 1.5em;
+}
+
+#interface td.src { white-space: nowrap; }
+
+#interface td { vertical-align: top; }
+
+#footer {
+  background: #d1d1d1;
+  border-top: 1px solid #ababab;
+  color: #424242;
+  padding: 0.5em 0;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#mini {
+  margin: 0 auto;
+  padding: 0 1em 1em;
+}
+
+#mini > * { font-size: 12px; }
+
+#mini #module-list .caption,
+#mini #module-header .caption {
+  font-size: 16px;
+  margin: 0.5em 0 0.5em 0;
+}
+
+#mini #module-list ul { margin: 0; }
+
+#mini #interface h1,
+#mini #interface h2,
+#mini #interface h3,
+#mini #interface h4,
+#mini #interface h5 {
+  font-size: 14px;
+  margin: 1em 0 0;
+}
+
+#mini #interface .top,
+#mini #interface .src { margin: 0.1em 0 0.1em 0; }
+
+#index table {
+  background: #e8e8e8;
+  padding: 0.5em;
+}
+
+#index .caption {
+  font-size: 18px;
+  margin: 0 0 1em 0;
+}
+
+#index .src { font-weight: bold; }
+
+#index .alt {
+  font-size: 10px;
+  font-style: italic;
+  padding-left: 1.5em;
+}
+
+#index td + td { padding-left: 2em; }
+
+.caption, h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 1.5em 0 1em 0;
+}
+
+.hide { display: none; }
+.show { display: inherit; }
+.clear { clear: both; }
+
+.collapser {
+  background: url(arrow-down.gif) no-repeat 0px 4px;
+}
+
+.expander {
+  background: url(arrow-right.gif) no-repeat 0px 4px;
+}
+
+.collapser, .expander {
+  padding-left: 12px;
+  margin-left: -12px;
+  cursor: pointer;
+}
+
+.info {
+  font-size: 12px;
+  padding: 0 1em 1.5em 11em;
+  background: #ededed;
+  color: #525252;
+}
+
+table.info {
+  float: right;
+  line-height: 15px;
+}
+
+.arguments,
+.constructors,
+.top div.doc,
+.subs.instances { padding-left: 2.5em; }
+
+.def { font-weight: bold; }
+
+p.src {
+  background: #e8e8e8;
+  padding: 0.3em 1em;
+  border-left: 5px solid #d1d1d1;
+}
