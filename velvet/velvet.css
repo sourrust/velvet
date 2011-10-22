@@ -1,3 +1,18 @@
+/**
+ * Velvet Haddock Theme
+ * ====================
+ *
+ * COLOR   HEX
+ * -----   -------
+ * white   #ededed
+ * grey0   #e8e8e8
+ * grey1   #d1d1d1
+ * grey2   #424242
+ * black   #303030
+ * red0    #ffe4e1
+ * red1    #dc143c
+ */
+
 * { margin: 0; padding: 0; }
 html { width: 100%; height: 100%; }
 
