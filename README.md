@@ -2,6 +2,31 @@
 
 Velvet is a haddock theme aiming to be simple and easy to read.
 
+### Usage
+***
+
+From commandline
+
+`haddock --theme=/path/to/velvet {files...}`
+
+or
+
+Using cabal (script)
+
+```bash
+#!/bin/bash
+
+PKG_NAME=#your package name
+VELVET_PATH=/path/to/velvet
+DEST=dist/doc/html/${PKG_NAME}
+
+cabal haddock --css=${VELVET_PATH}/velvet.css
+
+cp ${VELVET_PATH}/arrow-down.gif ${DEST}
+cp ${VELVET_PATH}/arrow-right.gif ${DEST}
+cp ${VELVET_PATH}/synopsis.png ${DEST}
+```
+
 ### Screenshots
 ***
 
