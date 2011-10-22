@@ -6,16 +6,16 @@ Velvet is a haddock theme aiming to be simple and easy to read.
 ***
 
 **Contents**:
-![contents](img/contents.png)
+![contents](https://github.com/sourrust/velvet/raw/master/img/contents.png)
 
 **Index**:
-![index](img/index.png)
+![index](https://github.com/sourrust/velvet/raw/master/img/index.png)
 
 **Main**:
-![main](img/main.png)
+![main](https://github.com/sourrust/velvet/raw/master/img/main.png)
 
 **Frames**:
-![frame](img/frames.png)
+![frame](https://github.com/sourrust/velvet/raw/master/img/frames.png)
 
 The example screenshots used were from documentation in [attoparsec](https://github.com/bos/attoparsec) project.
 
