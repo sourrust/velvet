@@ -294,7 +294,8 @@ table.info {
 .arguments,
 .constructors,
 .top div.doc,
-.subs.instances { padding-left: 2.5em; }
+.subs.instances,
+.subs.methods { padding-left: 2.5em; }
 
 .def { font-weight: bold; }
 
