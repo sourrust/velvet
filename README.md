@@ -2,7 +2,7 @@
 
 Velvet is a haddock theme aiming to be simple and easy to read.
 
-**Color Palette**
+**Color Palette**  
 ![color](https://github.com/sourrust/velvet/raw/master/img/colorpalette.png)
 
 `#ededed` white  
