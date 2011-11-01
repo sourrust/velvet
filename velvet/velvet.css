@@ -61,7 +61,7 @@ pre {
 }
 
 pre, code, kbd, samp, tt, .src {
-  font-family: 'Bitstream Vera Sans Mono', Monaco, monospace;
+  font-family: 'Bitstream Vera Sans Mono', Menlo, Monaco, monospace;
 }
 /*@}*/
 
