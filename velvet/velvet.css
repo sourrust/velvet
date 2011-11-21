@@ -304,6 +304,21 @@ p.src {
   padding: 0.3em 1em;
   border-left: 5px solid #d1d1d1;
 }
+
+.subs dd { padding: 0 2em; }
+
+.subs dt { padding-bottom: 0.3em; }
+
+.subs dd p {
+  margin-top: 0em;
+  color: #424242;
+}
+
+.subs dd.empty { display: none; }
+
+.fields { padding: 0.5em 0 0 1em; }
+
+.fields .caption { display:none; }
 /*@}*/
 
 /* vim:fdm=marker:fmr=@{,@}: */
