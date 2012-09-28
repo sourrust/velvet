@@ -176,6 +176,7 @@ pre, code, kbd, samp, tt, .src {
 
 #synopsis p.caption.expander {
   background: url(synopsis.png) no-repeat -5px -17px;
+  margin-bottom: -1px;
 }
 
 #interface table {
