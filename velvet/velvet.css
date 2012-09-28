@@ -170,7 +170,9 @@ pre, code, kbd, samp, tt, .src {
 
 #synopsis p.caption.collapser {
   background: url(synopsis.png) no-repeat -55px -17px;
-  margin: 0 0 -6em 555em;
+  position: relative;
+  right: -527px;
+  bottom: -7px;
 }
 
 #synopsis p.caption.expander {
