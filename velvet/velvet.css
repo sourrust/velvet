@@ -162,20 +162,22 @@ pre, code, kbd, samp, tt, .src {
 #synopsis .show {
   background: #e8e8e8;
   height: 500px;
-  overflow: none;
+  width: 500px;
+  overflow: scroll;
   padding: 1.5em;
   border: 1px solid #303030;
 }
 
-#synopsis .show:hover { overflow: auto; }
-
 #synopsis p.caption.collapser {
   background: url(synopsis.png) no-repeat -55px -17px;
-  margin: 0 0 -6em 555em;
+  position: relative;
+  right: -527px;
+  bottom: -7px;
 }
 
 #synopsis p.caption.expander {
   background: url(synopsis.png) no-repeat -5px -17px;
+  margin-bottom: -1px;
 }
 
 #interface table {
