@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     less: {
-      dev: {
+      development: {
         options: {
           paths: ['velvet']
         },
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           'build/style.css': 'velvet/velvet.less'
         }
       },
-      compress: {
+      production: {
         options: {
           paths: ['less'],
           yuicompress: true
@@ -22,23 +22,29 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      dist: {
-        files: {
-          'build/': 'velvet/*.{png,gif}'
-        }
+      options: {
+        processContentExcluded: ['**/*.{png,gif}']
+      },
+      main: {
+        files: [
+          { expand: true
+          , cwd: 'velvet/'
+          , src: ['*.{png,gif}']
+          , dest: 'build/'
+          }
+        ]
       }
     },
     watch: {
-      less: {
-        files: ['velvet/*.less'],
-        tasks: ['less:dev']
-      }
+      files: 'velvet/*.less',
+      tasks: ['less:development']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', 'less:dev copy');
-  grunt.registerTask('release', 'less:compress copy');
+  grunt.registerTask('default', ['less:development', 'copy']);
+  grunt.registerTask('release', ['less:production', 'copy']);
 };
