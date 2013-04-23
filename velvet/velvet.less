@@ -7,19 +7,11 @@
 @red0:  #ffe4e1;
 @red1:  #dc143c;
 
-* {
+html,
+body {
   margin: 0;
   padding: 0;
-
-  + h1,
-  + h2,
-  + h3,
-  + h4,
-  + h5,
-  + h6 { margin-top: 0.5em; }
 }
-
-html { width: 100%; height: 100%; }
 
 ::selection { background: @red0; }
 ::-moz-selection { background: @red0; }
@@ -34,6 +26,13 @@ body {
   position: relative;
   min-height: 100%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin-top: 0.5em; }
 
 a {
   &:link, &:visited {
@@ -126,6 +125,7 @@ tt,
   ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 
     ul { margin-left: 1.5em; }
   }
@@ -224,7 +224,10 @@ tt,
     margin: 0.5em 0 0.5em 0;
   }
 
-  #module-list ul { margin: 0; }
+  #module-list ul {
+    margin: 0;
+    padding: 0;
+  }
 
   #interface {
     h1,
