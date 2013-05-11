@@ -1,0 +1,117 @@
+#content { padding: 2em 3.5em 8em 3.5em; }
+
+#module-list {
+  .package { float: right; }
+  .caption { font-size: 17px; }
+  ul {
+    list-style: none;
+    margin: 0 0 0 1.5em;
+    padding: 0;
+  }
+}
+
+#module-header .caption {
+  font-size: 24px;
+  border-bottom: 1px solid @grey2;
+}
+
+#table-of-contents {
+  float: right;
+  clear: right;
+  background: @grey0;
+  padding: 0.5em 1em;
+  max-width: 20em;
+  margin-left: 1.5em;
+
+  .caption { margin-top: 0; }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    ul { margin-left: 1.5em; }
+  }
+}
+
+#description .caption { display: none; }
+
+#interface {
+  table {
+    background: @grey0;
+    margin-top: -0.5em;
+    padding: 0.5em;
+  }
+
+  p.src .link { float: right; }
+
+  td {
+    vertical-align: top;
+
+    &.doc p {
+      margin: 0;
+      padding: 0 0 0.5em 1.5em;
+    }
+
+    &.src { white-space: nowrap; }
+  }
+}
+
+.caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 1.5em 0 1em 0;
+}
+
+.hide { display: none; }
+.show { display: inherit; }
+.clear { clear: both; }
+
+.info {
+  font-size: 12px;
+  margin-bottom: 1.5em;
+  padding: 0 1em 0 10em;
+  background: @white;
+  color: @grey2;
+}
+
+table.info {
+  float: right;
+  line-height: 15px;
+}
+
+.arguments,
+.constructors,
+.top div.doc,
+.subs.instances,
+.subs.methods { padding-left: 2.5em; }
+
+.def { font-weight: bold; }
+
+p.src {
+  background: @grey0;
+  padding: 0.3em 1em;
+  border-left: 5px solid @grey1;
+}
+
+.subs {
+  dd {
+    padding: 0 2em;
+    p {
+      margin-top: 0;
+      color: @grey3;
+    }
+    &.empty { display: none; }
+  }
+  dt { padding-bottom: 0.3em }
+}
+
+.fields {
+  padding: 0.5em 0 0 1em;
+  .caption { display: none; }
+}
