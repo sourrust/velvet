@@ -17,7 +17,7 @@ module.exports = function(grunt) {
           yuicompress: true
         },
         files: {
-          'css/style.css': 'less/main.less'
+          'build/style.css': 'velvet/velvet.less'
         }
       }
     },
