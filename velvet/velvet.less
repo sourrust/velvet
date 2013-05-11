@@ -6,59 +6,7 @@
 
 @import 'main-view';
 
-
-#synopsis {
-  display: none;
-
-  ul {
-    list-style: none;
-    white-space: nowrap;
-  }
-
-  .caption {
-    font-size: 1px;
-    color: @black;
-    width: 30px;
-    height: 30px;
-  }
-
-  .show {
-    background: @grey0;
-    height: 500px;
-    width: 500px;
-    overflow: scroll;
-    padding: 1.5em;
-    border: 1px solid @black;
-  }
-
-  p.caption {
-    &.collapser {
-      background: url(synopsis.png) no-repeat -55px -17px;
-      position: relative;
-      right: -527px;
-      bottom: -7px;
-    }
-
-    &.expander {
-      background: url(synopsis.png) no-repeat -5px -17px;
-      margin-bottom: -1px;
-    }
-  }
-
-  .no-frame & {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    font-size: 12px;
-    z-index: 100;
-  }
-}
-
-
-
-}
+@import 'synopsis';
 
 #footer {
   background: @grey1;
