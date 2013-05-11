@@ -1,0 +1,63 @@
+html { height: 100%; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::selection { background: @red0; }
+::-moz-selection { background: @red0; }
+
+body {
+  background: @white;
+  font-family: Verdana, Tamoha, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: @black;
+  text-align: left;
+  position: relative;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin-top: 0.5em; }
+
+a {
+  &:link, &:visited {
+    color: @red1;
+    text-decoration: none;
+  }
+  &[href]:hover { background: @red0; }
+}
+
+ul.links { list-style: none; }
+
+h1 { font-size: 20px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }
+h4, h5 { font-size: 14px; }
+
+ul, ol { margin: 0.5em 0 0 1.3em; }
+
+p { margin: 1em 0; }
+
+pre {
+  padding: 0.3em;
+  margin: 0.5em 0;
+  background: @grey1;
+  overflow: auto;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt,
+.src {
+  font-family: 'Bitstream Vera Sans Mono', Menlo, Monaco, monospace;
+}
